@@ -2,19 +2,9 @@ import {Routes,Route}  from "react-router-dom"
 import Navbar from  "./components/Navbar"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
+import Home from './pages/Home'
 
-function Home(){
-  return (
-    <main className="mx-auto max-w-7xl px-5 py-12">
-      <h1 className="text-4xl font-bold">
-        Discover your next <span className="text-movie-accent">Favorite</span>
-      </h1>
-      <p className="mt-3 text-gray-400" >
-        Explore movies for every mood
-      </p>
-    </main>
-  )
-}
+
 
 function Watchlist(){
   return <main className="p-8 text-2xl">Your Watchlist</main>

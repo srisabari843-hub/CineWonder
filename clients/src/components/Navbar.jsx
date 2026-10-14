@@ -4,7 +4,7 @@ const links=[
    
     {name:"Home",path:"/"},
     {name:"Watchlist",path:"/watchlist"},
-    {name:"profile",path:"/profile"},
+    {name:"Profile",path:"/profile"},
      {name:"Login",path:"/login"},
      {name:"Register",path:"/Register"}
      
@@ -14,7 +14,7 @@ export default function Navbar(){
     return (
         <nav className="sticky top-0 z-50 border-b bg-movie-bg/90 px-5 py-4 ">
             <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-                <NavLink to="/" className="text-2xl font-bold tracking-tight">
+                <NavLink to="/" className=" font-fredoka  text-3xl font-semibold tracking-tight">
                 <span className="text-movie-accent">Kid</span>Movie
                 </NavLink>
             
@@ -25,11 +25,11 @@ export default function Navbar(){
                 to={link.path}
                 end={link.path==="/"}
                 className={({isActive}) =>
-                `text-sm transition ${
+                `font-bold text-lg relative  after:absolute after:h-0.5 after:bg-blue-500 after:bottom-0 after:left-0 after:w-full after:transition-transform after:duration-400 ${
                     isActive ? 
-                    "font-semibold text-movie-accent" 
+                    "font-semibold text-movie-accent after:scale-x-100" 
                     :
-                     "text-gray-400 hover:text-white"
+                     "text-gray-400 hover:text-white after:scale-x-0"
                 }`
             }
                 >

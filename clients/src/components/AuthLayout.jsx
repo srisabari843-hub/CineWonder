@@ -2,12 +2,12 @@
 export default function AuthLayout({image,title,children}){
 
 return (
-    <div className = "grid min-h-screen md:grid-cols-[60%_40%]">
-        <div className = "hidden md:block">
+    <div className = "grid min-h-screen overflow-hidden md:grid-cols-[60%_40%]">
+        <div className = "relative hidden md:block p-0">
             <img 
             src={image}
             alt={`${title} illustration`}
-            className="h-[540px] w-full object-contain"/>
+            className="absolute inset-0 h-full w-full object-cover border-red-500"/>
         </div>
 
         <div className="flex items-center justify-center bg-movie-bg p-6">
